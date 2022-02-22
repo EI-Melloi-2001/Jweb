@@ -9,18 +9,15 @@ import java.io.IOException;
  * Servlet方法介绍
  */
 
-@WebServlet("/demo4")
 public class MyHttpServlet implements Servlet {
 
 
     protected void doGet(ServletRequest req, ServletResponse resp)  {
-        //super.doGet(req, resp);
         System.out.println("Get...");
     }
 
 
     protected void doPost(ServletRequest req, ServletResponse resp) {
-        //super.doPost(req, resp);
         System.out.println("Post...");
     }
 

@@ -13,7 +13,7 @@ import java.io.IOException;
  * Servlet方法介绍
  */
 
-@WebServlet("/demo4")
+@WebServlet("/demo6")
 public class ServletDemo6 extends HttpServlet {
 
     @Override
