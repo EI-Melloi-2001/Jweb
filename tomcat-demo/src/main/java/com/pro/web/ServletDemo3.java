@@ -4,13 +4,13 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/demo2",loadOnStartup = 1)
-
 /**
  * Servlet方法介绍
  */
+
+@WebServlet(urlPatterns = "/demo3",loadOnStartup = 1)
 public class ServletDemo3 implements Servlet {
-    private ServletConfig config;
+    private ServletConfig config; //定义类成员变量
 
     /**
      * 初始化方法
