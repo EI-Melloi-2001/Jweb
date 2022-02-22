@@ -18,20 +18,17 @@ public class ServletDemo6 extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //super.doGet(req, resp);
         System.out.println("Get...");
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //super.doPost(req, resp);
         System.out.println("Post...");
     }
 
     @Override
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
         //根据请求方式的不同,进行分别的处理。
-
         HttpServletRequest request = (HttpServletRequest) req;
         //1.获取请求方式
         String method = request.getMethod();
@@ -39,7 +36,7 @@ public class ServletDemo6 extends HttpServlet {
         if("GET".equals(method)){
             //get 方式的处理逻辑
         } else if("POST".equals(method)){
-            ////post 方式的处理逻辑
+            //post 方式的处理逻辑
         }
     }
 }
