@@ -1,8 +1,10 @@
 package com.pro.web;
 
+import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
+import java.io.IOException;
 
 @WebServlet("/demo5")
 /**
@@ -15,12 +17,12 @@ import javax.servlet.annotation.WebServlet;
 public class ServletDemo5 extends MyHttpServlet {
 
     @Override
-    protected void doGet(ServletRequest req, ServletResponse resp) {
+    protected void doGet(ServletRequest req, ServletResponse resp) throws ServletException, IOException {
         System.out.println("get...");
     }
 
     @Override
-    protected void doPost(ServletRequest req, ServletResponse resp) {
+    protected void doPost(ServletRequest req, ServletResponse resp) throws ServletException, IOException {
         System.out.println("post...");
     }
 }

@@ -12,12 +12,12 @@ import java.io.IOException;
 public class MyHttpServlet implements Servlet {
 
 
-    protected void doGet(ServletRequest req, ServletResponse resp)  {
+    protected void doGet(ServletRequest req, ServletResponse resp) throws ServletException, IOException {
         System.out.println("Get...");
     }
 
 
-    protected void doPost(ServletRequest req, ServletResponse resp) {
+    protected void doPost(ServletRequest req, ServletResponse resp) throws ServletException, IOException {
         System.out.println("Post...");
     }
 
